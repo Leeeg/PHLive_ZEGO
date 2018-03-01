@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/ll_share"
+             android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:gravity="bottom"
+              android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:background="@color/transparent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_dialog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <com.i5i58.live.common.view.imageVIew.CircleImageView
+                    android:id="@+id/civ_persion"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    app:border_color="@color/yellow_bottom"
+                    app:border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/tv_owner_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/black_word"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp" >
+
+                <ImageView
+                    android:id="@+id/iv_blackstar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/icon_dfeg_heart_blackstar" />
+
+                <FrameLayout
+                    android:id="@+id/iv_bigstar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:src="@drawable/icon_dfrg_heart_bigstar" />
+
+                    <TextView
+                        android:id="@+id/tv_stars"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="52dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/redpoint"
+                        android:gravity="center"
+                        android:text="100"
+                        android:singleLine="true"
+                        android:textColor="@color/white_word"
+                        android:textSize="8sp" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_heartnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iv_blackstar"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_toRightOf="@+id/iv_blackstar"
+                    android:gravity="center"
+                    android:textColor="@color/textcolor_red" />
+
+                <ImageView
+                    android:id="@+id/iv_onlinepeople"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_heartnum"
+                    android:layout_toRightOf="@+id/tv_heartnum"
+                    android:gravity="center"
+                    android:src="@drawable/icon_dfrg_heart_onlinepeople" />
+
+                <TextView
+                    android:id="@+id/tv_onlinepeoplenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iv_onlinepeople"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/iv_onlinepeople"
+                    android:gravity="center"
+                    android:textColor="@color/textcolor_red" />
+
+                <ProgressBar
+                    android:id="@+id/pb_heart"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/iv_bigstar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pb_heart"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp"
+                    android:text="喜欢就送星,帮Ta上热门"
+                    android:textColor="@color/grey_word"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/bt_getheart"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_dfrg_heart"
+                    android:gravity="center"
+                    android:textColor="@color/black_word"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="本轮已连续签"
+                        android:textColor="@color/black_word"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/orange_word"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="天,继续努力！"
+                        android:textColor="@color/black_word"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@drawable/shape_default_trans"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_height="69dp">
+
+    <TextView
+        android:id="@+id/music_playIbt"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="72dp"
+        android:textColor="@color/white_word"
+        android:text="播放中"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:background="@drawable/shape_music_playing_item"
+        android:layout_height="26dp"/>
+
+    <TextView
+        android:text="time"
+        android:id="@+id/music_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/music_playIbt"
+        android:textColor="@color/white_word"/>
+
+    <TextView
+        android:text="name"
+        android:id="@+id/music_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white_word"
+        android:textSize="15sp" />
+
+    <TextView
+        android:text="singer"
+        android:id="@+id/music_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"
+        android:layout_below="@id/music_title"
+        android:textColor="@color/white_word" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_line"
+        android:layout_height="0.8dp"/>
+
+</RelativeLayout>

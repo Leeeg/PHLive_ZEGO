@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:id="@+id/frg_operate_fl_top"
+              android:layout_height="wrap_content"
+              android:visibility="gone"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37.81dp"
+        android:layout_marginTop="7.26dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/audience_operate_top_person"
+            android:layout_width="140.36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/riv_mac"
+            android:background="@drawable/shape_audience_operate_top"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/audience_operate_top_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2.9dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_persion"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_owner_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:gravity="bottom|left"
+                    android:textColor="@color/white_word"
+                    android:textSize="11.63sp"/>
+
+                <TextView
+                    android:id="@+id/tv_onlinepeaple"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="top|left"
+                    android:paddingTop="3.63dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white_word"
+                    android:textSize="9.81sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/operate_im_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="5dp"
+                android:scaleType="center"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/icon_mac"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6.9dp"
+            android:layout_marginRight="6.9dp"
+            android:src="@drawable/audience_operate_top_mic"/>
+
+        <com.i5i58.live.common.view.recyclerView.MyRecyclerView
+            android:id="@+id/audience_operate_top_sofa"
+            android:layout_width="0dp"
+            android:layout_height="38.55dp"
+            android:layout_alignBottom="@id/riv_mac"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/iv_exit"
+            android:layout_toRightOf="@id/riv_mac"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:scrollbars="none"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/audience_operate_top_exit"
+            android:layout_width="37.81dp"
+            android:layout_height="37.81dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/audience_operate_top_close"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="7.26dp">
+
+        <LinearLayout
+            android:id="@+id/audience_operate_top_contribution"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/shape_audience_operate_top_"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/Text_Shade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7.63dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="贡献榜"
+                android:textColor="@color/yellow_bottom"
+                android:textSize="10.9sp"/>
+
+            <TextView
+                android:id="@+id/operate_tv_contribution"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minWidth="20dp"
+                android:paddingLeft="5.82dp"
+                android:paddingRight="5.45dp"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/white_word"
+                android:textSize="10.9sp"/>
+
+            <ImageView
+                android:id="@+id/operate_top_img_arrows"
+                android:layout_width="11.63dp"
+                android:layout_height="11.63dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="5.1dp"
+                android:src="@drawable/icon_audience_operate_top"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/operate_top_txt_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:visibility="gone"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="喜欢Ta吗？加入粉丝团吧！"
+            android:textColor="@color/white_word"
+            android:background="@drawable/shape_audience_operate_top"
+            android:textSize="10.9sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

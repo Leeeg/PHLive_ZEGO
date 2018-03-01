@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/cover_image"
+            android:layout_width="154dp"
+            android:layout_height="154dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/icon_living"
+            android:layout_margin="5dp"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            android:src="@drawable/icon_living"
+            android:layout_width="wrap_content"
+            android:scaleType="fitEnd"
+            android:layout_height="18dp"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:background="@color/white_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_persion_image"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="clip_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxEms="9"
+                android:textColor="@color/black_word"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:includeFontPadding="false"
+                    android:maxEms="9"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:textColor="@color/grey_word"
+                    android:text="未知星球"
+                    android:textSize="10sp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_online_people"
+                        android:layout_toLeftOf="@+id/tv_online_count"/>
+
+                    <TextView
+                        android:id="@+id/tv_online_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:ellipsize="end"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center|right"
+                        android:layout_marginLeft="5dp"
+                        android:includeFontPadding="false"
+                        android:maxEms="9"
+                        android:layout_marginRight="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/grey_word"
+                        android:text="0"
+                        android:textSize="10dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

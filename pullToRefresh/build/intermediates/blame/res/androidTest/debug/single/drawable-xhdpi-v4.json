@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\indicator_arrow.png",
+        "source": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\indicator_arrow.png"
+    },
+    {
+        "merged": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\default_ptr_flip.png",
+        "source": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\default_ptr_flip.png"
+    },
+    {
+        "merged": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\default_ptr_rotate.png",
+        "source": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\default_ptr_rotate.png"
+    }
+]

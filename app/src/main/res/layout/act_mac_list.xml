@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_root"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_table_top"/>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/transparent">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/grey_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_top_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/greyword2"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_top_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="("
+                        android:textColor="@color/greyword2"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_top_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/greyword2"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_top_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=")"
+                        android:textColor="@color/greyword2"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <com.i5i58.live.common.view.xListView.XListView
+                    android:id="@+id/mac_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:dividerHeight="0dp"
+                    android:divider="@null"
+                    android:background="@color/grey_bg"
+                    android:footerDividersEnabled="false"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/im_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/icon_contribute_help"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_help"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/contribute_notify"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="当前直播间，根据当周（周一6时至当前时间的当前直播间所刷礼物的用户排行）（1虎币=100钻石贡献值），每周一6时更新"
+                    android:textColor="@color/black_word"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_known"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/contribute_bottom_help"
+                    android:gravity="center"
+                    android:text="懂了"
+                    android:textColor="@color/black_word"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

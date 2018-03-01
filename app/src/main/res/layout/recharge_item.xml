@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/rl_item"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/yuanjiao_white"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/tv_rmb"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="¥6"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/yellow_bottom"/>
+    
+    <TextView 
+        android:id="@+id/tv_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="4.2 i币"
+        android:textSize="16sp"
+        android:gravity="bottom"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black_word"/>
+    
+
+</RelativeLayout>

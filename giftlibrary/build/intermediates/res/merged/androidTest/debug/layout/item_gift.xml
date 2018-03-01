@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+    <RelativeLayout
+        android:id="@+id/infoRl"
+        android:layout_width="210dp"
+        android:layout_height="42dp"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="8dp">
+
+        <ImageView
+            android:id="@+id/ll_animation_bg"
+            android:layout_width="210dp"
+            android:layout_height="42dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="bottom|left"/>
+
+        <ImageView
+            android:id="@+id/headIv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/nickNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/headIv"
+            android:text="nickName"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/infoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/nickNameTv"
+            android:layout_below="@id/nickNameTv"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="#ffea79"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/giftIv"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="100dp" />
+
+    <ImageView
+        android:id="@+id/light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp" />
+
+    <org.dync.giftlibrary.util.MagicTextView
+        android:id="@+id/gift_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:text=""
+        android:visibility="gone"
+        android:textColor="#ffc919"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:foreground="#f4f463"
+        app:innerShadowColor="#FF000000"
+        app:innerShadowDy="2"
+        app:innerShadowRadius="1"
+        app:strokeColor="#dd7631"
+        app:strokeJoinStyle="miter"
+        app:strokeWidth="2"/>
+
+    <org.dync.giftlibrary.widget.StrokeTextView
+        android:id="@+id/animation_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:innnerColor="@color/white"
+        app:outerColor="@color/white" />
+
+</FrameLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- theme -->
+    <color name="colorPrimary">         #3F51B5</color>
+    <color name="colorPrimaryDark">     #303F9F</color>
+    <color name="colorAccent">          #FF4081</color>
+    <color name="colorBlack">           #000000</color>
+
+    <!-- user -->
+    <color name="transparent">          #00000000</color>
+
+    <color name="color_green_4bbda2">   #4bbda2</color>
+    <color name="green_words">          #26bfa1</color>
+    <color name="green_tab">            #26BFA1</color>
+
+    <color name="white">                #ffffff</color>
+    <color name="white_bg">             #f0f0f0</color>
+    <color name="white_word">           #f0f0f0</color>
+
+    <color name="grey_bg">              #F5F5F5</color>
+    <color name="grey_words">           #c3c3c3</color>
+    <color name="grey_word">            #808080</color>
+    <color name="grey_line">            #EDEDED</color>
+    <color name="gray_report">          #c5c4c4</color>
+    <color name="GreyWhite">            #F7F7F7</color>
+    <color name="greyblack">            #888888</color>
+    <color name="greyword2">            #666666</color>
+    <color name="grey_table">           #f9f9f9</color>
+
+    <color name="black_word">           #1A1A1A</color>
+    <color name="black_line">           #1A1A1A</color>
+
+    <color name="blue_word">            #5DB8FE</color>
+    <color name="blue_bg">              #7BD9F8</color>
+
+    <color name="yellow_bottom">        #ffdd02</color>
+
+    <color name="orange_word">          #ff9102</color>
+
+    <color name="green_welcome_words">  #5ff269</color>
+
+    <!-- 积分等级颜色 -->
+    <color name="score_lv_1">           #aaff93</color>
+    <color name="score_lv_2">           #83f5ff</color>
+    <color name="score_lv_3">           #ff9e9e</color>
+    <color name="score_lv_4">           #ca3f3f</color>
+    <color name="score_lv_5">           #dd69ff</color>
+    <color name="score_lv_6">           #ff5dee</color>
+    <color name="score_lv_7">           #ffb16c</color>
+    <color name="score_lv_8">           #ff7c07</color>
+    <color name="score_lv_9">           #ffde01</color>
+
+
+    <!-- 黑色字体颜色 -->
+    <color name="textcolor_black">      #000000</color>
+    <!-- 浅灰色字体颜色 -->
+    <color name="textcolor_light_grey"> #807e7a</color>
+    <!-- 红色字体颜色 -->
+    <color name="textcolor_red">        #e30000</color>
+    <!-- 红色字体颜色 -->
+    <color name="textcolor_green">      #22ad38</color>
+    <!-- 非保险橘黄色字体颜色 -->
+    <color name="not_surance_yellow">   #ffbb38</color>
+    <!-- 保险蓝色字体颜色 -->
+    <color name="surance_blue">         #3598da</color>
+    <!-- 浅蓝色字体颜色 -->
+    <color name="light_blue">           #E5F2FD</color>
+    <!-- 浅黑 -->
+    <color name="home_text_light_black">#333333</color>
+    <!-- 深灰 -->
+    <color name="home_border_dark_gray">#E1E1E1</color>
+    <!-- 选择器dialog条目默认的显示的背景 -->
+    <color name="dialog_unpressed_bg_color">#FFFFFF</color>
+    <color name="corner_border_color">#F3F4F3</color>
+    <!-- 自定义Dialog信息部分文字的颜色 -->
+    <color name="msg_color">#FFFFFFFF</color>
+    <!-- 自定义Dialog中button点击时的颜色 -->
+    <color name="btn_press_color">#FFa5281b</color>
+    <!-- 自定义Dialog中button未点击时的颜色 -->
+    <color name="btn_unpress_color">#FFc0392b</color>
+    <!-- 粉丝团颜色 -->
+    <color name="red_fansclub">#ed7151</color>
+    <!-- @颜色 -->
+    <color name="pink">#f37ff3</color>
+
+    <!-- MyCircleImageView -->
+    <color name="ml_white">#ffffffff</color>
+    <color name="ml_gray">#ff9e9e9e</color>
+    <color name="ml_blue">#ff239efe</color>
+    <color name="ml_red">#ffff0000</color>
+
+    <color name="umeng_white">#ffffff</color>
+    <color name="umeng_blue">#0086DC</color>
+    <color name="umeng_black">#000000</color>
+    <color name="umeng_background">#D4E0E5</color>
+    <color name="umeng_text_color">#575A5C</color>
+
+</resources>

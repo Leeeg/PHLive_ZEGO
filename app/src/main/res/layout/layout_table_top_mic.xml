@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_title"
+              android:layout_width="match_parent"
+              android:layout_height="43dp"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/table_top_fl_back"
+            android:layout_width="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/bt_table_top_back"/>
+
+        </FrameLayout>
+
+        <android.support.design.widget.TabLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/liveroom_table_tab"
+            android:layout_width="match_parent"
+            app:tabMinWidth="80dp"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            android:layout_toRightOf="@+id/table_top_fl_back"
+            android:layout_toLeftOf="@+id/menu"
+            app:tabMode="fixed"
+            app:tabIndicatorColor="@color/green_tab"
+            app:tabBackground="@null"
+            app:tabIndicatorHeight="1.5dp"
+            android:layout_height="match_parent">
+
+        </android.support.design.widget.TabLayout>
+
+        <View
+            android:id="@+id/menu"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp">
+
+        </View>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/grey_line"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              tools:context=".main.activity.MainActivity"
+              android:id="@+id/home_ll_top"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@color/white"
+              android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/liveroom_table_top_ibt_serach"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:paddingLeft="5dp"
+        android:src="@drawable/bt_liveroom_table_search"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/liveroom_table_tab"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        app:tabMinWidth="80dp"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabMode="scrollable"
+        app:tabIndicatorColor="@color/green_tab"
+        app:tabBackground="@null"
+        app:tabIndicatorHeight="1dp"
+        android:layout_height="match_parent">
+
+    </android.support.design.widget.TabLayout>
+
+    <ImageButton
+        android:id="@+id/liveroom_table_top_ibt_game"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:paddingRight="5dp"
+        android:background="@color/transparent"
+        android:src="@drawable/bt_liveroom_table_game"/>
+
+</LinearLayout>

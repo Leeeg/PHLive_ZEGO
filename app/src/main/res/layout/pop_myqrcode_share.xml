@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical" >
+
+        <View
+            android:id="@+id/pop_close"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:id="@+id/pop_qrcode_share"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@color/blue_word"
+            android:gravity="center"
+            android:background="@drawable/shape_default"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg"/>
+
+        <TextView
+            android:id="@+id/pop_qrcode_save"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@color/blue_word"
+            android:background="@drawable/shape_default"
+            android:gravity="center"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/grey_bg"/>
+
+        <TextView
+            android:id="@+id/pop_qrcode_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textColor="@color/blue_word"
+            android:background="@drawable/shape_default"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp" />
+
+</LinearLayout>

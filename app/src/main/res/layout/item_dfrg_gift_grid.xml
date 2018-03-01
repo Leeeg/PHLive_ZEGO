@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/alllayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_gift_chosed"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgdetail"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/guard"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_gravity="right"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tuaninfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/white_word"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tuaninfo2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:textColor="@color/grey_word" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/item_chosed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

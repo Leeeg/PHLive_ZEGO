@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:drawable="@mipmap/end_gift_2_bg0019" android:duration="50" />
+  <item android:drawable="@mipmap/end_gift_2_bg0001" android:duration="50" />
+  <item android:drawable="@mipmap/end_gift_2_bg0003" android:duration="50" />
+  <item android:drawable="@mipmap/end_gift_2_bg0005" android:duration="50" />
+  <item android:drawable="@mipmap/end_gift_2_bg0007" android:duration="50" />
+  <item android:drawable="@mipmap/end_gift_2_bg0008" android:duration="50" />
+  <item android:drawable="@mipmap/end_gift_2_bg0009" android:duration="50" />
+  <item android:drawable="@mipmap/end_gift_2_bg0010" android:duration="50" />
+  <item android:drawable="@mipmap/end_gift_2_bg0011" android:duration="50" />
+  <item android:drawable="@mipmap/end_gift_2_bg0013" android:duration="50" />
+  <item android:drawable="@mipmap/end_gift_2_bg0014" android:duration="50" />
+  <item android:drawable="@mipmap/end_gift_2_bg0015" android:duration="50" />
+  <item android:drawable="@mipmap/end_gift_2_bg0017" android:duration="50" />
+  <item android:drawable="@mipmap/end_gift_2_bg0018" android:duration="50" />
+  <item android:drawable="@mipmap/end_gift_2_bg0019" android:duration="50" />
+
+</animation-list>

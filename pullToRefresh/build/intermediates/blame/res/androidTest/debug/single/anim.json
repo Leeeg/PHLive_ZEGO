@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_bottom.xml",
+        "source": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\bundles\\default\\res\\anim\\slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_top.xml",
+        "source": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\bundles\\default\\res\\anim\\slide_out_to_top.xml"
+    },
+    {
+        "merged": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_bottom.xml",
+        "source": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\bundles\\default\\res\\anim\\slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_top.xml",
+        "source": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\bundles\\default\\res\\anim\\slide_in_from_top.xml"
+    }
+]

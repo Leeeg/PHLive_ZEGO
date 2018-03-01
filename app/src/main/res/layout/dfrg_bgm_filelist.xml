@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/music_bg"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/bg_serach"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_music_serach"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="45dp">
+
+        <EditText
+            android:id="@+id/edit_music_serach"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:background="@color/transparent"
+            android:layout_marginRight="20dp"
+            android:layout_height="30dp"/>
+
+        <Button
+            android:id="@+id/bt_music_serach"
+            android:layout_width="50dp"
+            android:background="@color/transparent"
+            android:text="取消"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/white_word"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_music_serach"
+        android:layout_width="match_parent"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/music_serach"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="搜索本地歌曲"
+            android:textColor="@color/white_word"
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/broad_root"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/bg_serach"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/broad_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

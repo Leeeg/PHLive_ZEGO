@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/ll_bgm"
+             android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_gravity="bottom"
+              android:background="@color/black"
+              android:padding="@dimen/dp_10"
+              android:layout_height="214dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="伴奏"
+        android:textSize="13sp"
+        android:textColor="@color/grey_word"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bgm_operate"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/icon_bgm_operate_music"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/bgm_operate_musicName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_word"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                android:id="@+id/bgm_operate_musicPause"
+                android:layout_width="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:scaleType="center"
+                android:layout_marginRight="15dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bgm_operate_musiclist"
+            android:layout_width="35dp"
+            android:scaleType="center"
+            android:src="@drawable/icon_music_list"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音效"
+        android:textSize="13sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/grey_word"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_height="35dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="伴奏"
+            android:textSize="12sp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/grey_word"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_bgm_operate_bgmdown"/>
+
+        <SeekBar
+            android:id="@+id/bgm_seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:max="100"
+            android:maxHeight="2.0dip"
+            android:minHeight="2.0dip"
+            android:progress="75"
+            android:progressDrawable="@drawable/bg_seekbar"
+            android:thumb="@drawable/seekbar_thumb"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icon_bgm_operate_bgmup"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="35dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人声"
+            android:textSize="12sp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/grey_word"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_bgm_operate_voicedown"/>
+
+        <SeekBar
+            android:id="@+id/voice_seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:max="100"
+            android:maxHeight="2.0dip"
+            android:minHeight="2.0dip"
+            android:progress="75"
+            android:progressDrawable="@drawable/bg_seekbar"
+            android:thumb="@drawable/seekbar_thumb"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icon_bgm_operate_voiceup"/>
+
+    </LinearLayout>
+
+</LinearLayout>

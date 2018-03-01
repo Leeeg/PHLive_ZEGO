@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+             android:background="@color/transparent"
+             android:layout_gravity="center"
+              android:layout_height="31dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_marginLeft="11dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_vip"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/vip_3"/>
+
+                <ImageView
+                    android:id="@+id/iv_guard"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/guard_3"/>
+
+                <ImageView
+                    android:id="@+id/iv_lv"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/lvl_1"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center|left"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center|left"
+                    android:textColor="@color/yellow_bottom"
+                    android:textSize="11sp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:minWidth="80dp"
+                    android:background="@drawable/barrage__item"
+                    android:text=""/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <com.i5i58.live.common.view.imageVIew.RoundImageView
+        android:id="@+id/ri_icon"
+        android:layout_width="31dp"
+        android:layout_height="31dp"/>
+
+</FrameLayout>

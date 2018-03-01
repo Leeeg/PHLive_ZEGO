@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_gravity="bottom"
+              android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/close_dfrg_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/dfrg_ll_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:background="@color/black"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_bg_car"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:scaleType="center"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/iv_bg_mount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="21dp"
+                android:src="@drawable/selecter_dfrg_gift_mount"
+                android:scaleType="fitCenter"/>
+
+            <ImageView
+                android:id="@+id/iv_bg_vip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="21dp"
+                android:src="@drawable/selecter_dfrg_gift_vip"/>
+
+            <ImageView
+                android:id="@+id/iv_bg_guard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/selecter_dfrg_gift_guard"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/dfrg_fl_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:id="@+id/myView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="194dp"
+                        android:background="@drawable/line_top">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/dfrg_gift_gift_viewpager"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:overScrollMode="never"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_point"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10dp"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rl_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="194dp"
+                        android:background="@drawable/line_top"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_gift_chose"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_gift"
+                            android:layout_width="60dp"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/line_right"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_gift"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/bg_dfrg_gift_gift_chosed"/>
+
+                            <TextView
+                                android:id="@+id/tv_gift"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="2dp"
+                                android:gravity="center"
+                                android:text="礼物"
+                                android:textColor="@color/white_word"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_box"
+                            android:layout_width="60dp"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/line_top"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_parcel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/bg_dfrg_gift_pakge_unchosed"/>
+
+                            <TextView
+                                android:id="@+id/tv_parcel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:gravity="center"
+                                android:text="包裹"
+                                android:textColor="@color/grey_word"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/ll_card"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/line_top">
+
+                            <TextView
+                                android:id="@+id/tv_recharge"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/green_tab"
+                                android:textSize="14sp"
+                                android:visibility="gone"/>
+
+                            <LinearLayout
+                                android:id="@+id/ll_wallet"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/gift_tv_recharge"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:lines="1"
+                                    android:singleLine="true"
+                                    android:text="充值"
+                                    android:textColor="@color/yellow_bottom"
+                                    android:textSize="12sp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_recharge_wallet"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:lines="1"
+                                    android:singleLine="true"
+                                    android:text="0"
+                                    android:textColor="@color/yellow_bottom"
+                                    android:textSize="12sp"
+                                    android:visibility="gone"/>
+
+                                <ImageView
+                                    android:id="@+id/gift_iv_recharge"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:background="@drawable/icon_dfrg_gift_b"
+                                    android:visibility="gone"/>
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_send"
+                            android:layout_width="123dp"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/line_top"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/gift_num"
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="1"
+                                android:background="@drawable/bg_dfrg_gift_board_innomal"
+                                android:textColor="@color/white_word"/>
+
+                            <TextView
+                                android:id="@+id/tv_gift_send"
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/selecter_dfrg_gift_send"
+                                android:gravity="center"
+                                android:textColor="@color/black_word"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/number_other"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:background="@color/white_bg"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/edit_text_style"
+                android:id="@+id/et_number"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:gravity="center"
+                android:hint="输入赠送数量 至多1314"
+                android:inputType="number"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_yes"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/button_green_bg"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/black_word"
+                android:textSize="16sp"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_gift_conut"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/gift_conut_bg"/>
+
+</FrameLayout>

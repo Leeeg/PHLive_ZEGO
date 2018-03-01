@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_root"
+    android:background="@color/yellow"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <TextureView
+            android:id="@+id/textureView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/bt_anchor_exit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/audience_operate_top_close"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_startLive_before"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/change_camera"
+            android:layout_width="22dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/iv_exit"
+            android:src="@drawable/bt_change_camera"/>
+
+        <ImageView
+            android:id="@+id/iv_exit"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"/>
+
+        <View
+            android:id="@+id/iv_filter"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/iv_exit"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/startAv_ll_setting"
+            android:layout_below="@+id/iv_filter"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#301a1a1a"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:id="@+id/startAv_iv_setCoverImage"
+                android:layout_width="84dp"
+                android:layout_marginLeft="17dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/bg_anchor_setcoverimage"
+                android:layout_height="84dp"/>
+
+            <EditText
+                android:id="@+id/startAv_tv_setTitle"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:maxLength="18"
+                android:hint="输入标题吸引更多粉丝哦~"
+                android:gravity="top"
+                android:textSize="15sp"
+                android:background="@null"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_play"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="72dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/shape_palyav_play"
+            android:text="开启直播"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/play_text1"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="14dp"
+            android:text="开播默认同意遵守:"/>
+
+        <TextView
+            android:id="@+id/play_tv_rules"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/green_tab"
+            android:layout_marginBottom="14dp"
+            android:layout_toRightOf="@+id/play_text1"
+            android:text="《胖虎娱乐主播违规管理法方法》"/>
+
+    </RelativeLayout>
+
+    <org.dync.giftlibrary.widget.NumberTextView
+        android:id="@+id/number_countdown"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_height="match_parent"/>
+
+    <include layout="@layout/anchor_operate"/>
+
+    <include layout="@layout/layout_live_close"/>
+
+</android.support.design.widget.CoordinatorLayout>

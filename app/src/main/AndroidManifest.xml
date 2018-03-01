@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.i5i58.live"
+          android:versionCode="1"
+          android:versionName="1.1.21">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21"
+        tools:overrideLibrary="com.facebook.react, com.zhouwei.blurlibrary, com.umeng.socialize.evernote, com.umeng.socialize.pinterest, com.beefe.picker, com.imagepicker"/>
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>                         <!-- 电话权限 -->
+
+    <!-- Umeng -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <!-- 如果需要实时音视频通话模块，下面的权限也是必须的。否则，可以不加 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+    <!-- 访问网络状态-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 控制呼吸灯，振动器等，用于新消息提醒 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 外置存储存取权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 多媒体相关 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <!-- 自启动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 直播权限声明 -->
+
+    <!-- 允许挂载和反挂载文件系统 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许程序创建显示在其他程序之上，并且类型为TYPE_SYSTEM_ALERT的窗体 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 允许程序使用PowerManager WakeLocks以防止处理器休眠或者屏幕锁屏 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 配置一个程序用于调试 -->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <!-- 声明程序使用camera和自动对焦功能 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- SDK 权限申明, 第三方 APP 接入时，请将 com.netease.nim.demo 替换为自己的包名 -->
+    <permission
+        android:name="com.i5i58.live.permission.RECEIVE_MSG"
+        android:protectionLevel="signature"/>
+    <!-- 接收 SDK 消息广播权限， 第三方 APP 接入时，请将 com.netease.nim.demo 替换为自己的包名 -->
+    <uses-permission android:name="com.i5i58.live.permission.RECEIVE_MSG"/>
+
+    <!-- 声明程序使用OpenGL ES 2.0 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:name=".TigerApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_round"
+        android:screenOrientation="locked"
+        android:windowSoftInputMode="adjustPan"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/mAppTheme">
+
+        <provider
+            android:name=".upDate.UpdateFileProvider"
+            android:authorities="${applicationId}.updatefileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/update_cache_path"/>
+        </provider>
+
+        <!-- 云信 APP key 如果 SDKOptions 中提供了，取 SDKOptions 中的值。 -->
+        <meta-data
+            android:name="com.netease.nim.appKey"
+            android:value="ba7a0d3dc3914a9e5cbac325d3c6aeab"/>
+
+        <!-- Umeng APPKey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58660e541061d22cf9000384"/>
+
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="56b54604e8328500cd4f5768da87b50c">
+        </meta-data>
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}"/>
+
+        <!-- 网易云通信SDK的监视系统启动和网络变化的广播接收器，用户开机自启动以及网络变化时候重新登录，保持和 NimService 同一进程 -->
+        <receiver android:name="com.netease.nimlib.service.NimReceiver"
+                  android:process=":core"
+                  android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 声明网易云通信后台服务，如需保持后台推送，使用独立进程效果会更好。 -->
+        <service
+            android:name="com.netease.nimlib.service.NimService"
+            android:process=":core" />
+
+        <!-- 网易云通信进程间通信service -->
+        <service android:name="com.netease.nimlib.service.ResponseService"/>
+
+        <!-- 网易云通信进程间通信 Receiver -->
+        <receiver android:name="com.netease.nimlib.service.ResponseReceiver"/>
+
+        <activity android:name=".main.activity.WelcomeActivity"
+            android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="data"
+                    android:scheme="share"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Activity -->
+        <!-- MainActivity -->
+        <activity android:name=".main.activity.MainActivity"
+                  android:launchMode="singleTask"/>
+        <!-- 第三方登录 -->
+        <activity android:name=".login.activity.LoginMainActivity"
+                  android:theme="@style/FullScreenTheme"/>
+        <!-- 手机登录 -->
+        <activity android:name=".login.activity.LoginByPhoneActivity"/>
+        <!-- 设置界面 -->
+        <activity android:name=".mine.activity.SettingActivity"/>
+        <!-- 我的二维码界面 -->
+        <activity android:name=".mine.activity.MyQrCodeActivity"/>
+        <!-- 个人信息界面 -->
+        <activity android:name=".mine.activity.EditPersonalActivity"/>
+        <!-- 个人信息编辑界面 -->
+        <activity android:name=".mine.activity.Modification"/>
+        <!-- 贡献榜界面 -->
+        <activity android:name=".home.activity.ContributeActivity"/>
+        <!-- 麦序界面 -->
+        <activity android:name=".home.activity.MicActivity"/>
+        <!-- 充值界面 -->
+        <activity android:name=".recharge.Recharge"/>
+        <!-- 微信充值回调界面 -->
+        <activity android:name=".wxapi.WXPayEntryActivity"/>
+        <!-- 注册——发送验证码 -->
+        <activity android:name=".login.activity.RegisterActivity"/>
+        <!-- 注册——设设置密码 -->
+        <activity android:name=".login.activity.RegisterSetPasswordActivity"/>
+        <!-- 游戏授权界面 -->
+        <activity android:name=".main.activity.Accredit">
+        <intent-filter>
+            <action android:name="android.intent.action.Accredit"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+        </activity>
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- RN -->
+        <activity
+            android:name=".reactNative.MyReactActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/MyDialogStyleBottom4"/>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <!-- 查看大图 -->
+        <activity android:name=".common.view.spaceImage.SpaceImageDetailActivity"
+                  android:theme="@style/FullScreenTheme"/>
+        <!-- imagePicker -->
+        <activity
+            android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
+            android:theme="@style/ImagePickerThemeFullScreen"/>
+        <!-- 观众端直播界面 -->
+        <!--<activity android:name=".home.activity.AudienceActivity"/>-->
+        <!-- 观众端直播界面 -->
+        <activity android:name=".home.activity.MainAudienceActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:screenOrientation="locked"
+                  android:windowSoftInputMode="adjustResize"/>
+        <!-- 主播端直播界面 -->
+        <activity android:name=".home.activity.ZegoAnchorActivity"
+                  android:theme="@style/FullScreenTheme"/>
+        <!-- Umeng -->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1105831799" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+    </application>
+
+</manifest>

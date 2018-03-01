@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+              android:id="@+id/ll_root"
+    android:background="@color/grey_bg">
+
+    <include layout="@layout/layout_table_top"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/modification_Edit"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:maxLength="200"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:background="@color/white_bg"
+            android:textColor="@color/black_word"/>
+
+        <ImageView
+            android:id="@+id/noanchor"
+            android:scaleType="center"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_on_anchor"/>
+
+    </FrameLayout>
+
+</LinearLayout>

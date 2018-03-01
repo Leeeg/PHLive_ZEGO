@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.i5i58.live.common.view.layout.WarpLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/message_recycle_layout"
+    app:grivate="left"
+    app:isFull="false"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Text_Shade"
+            android:id="@+id/item_chatroommessage_context_nick"
+            android:layout_width="wrap_content"
+            android:layout_gravity="top"
+            android:letterSpacing="0.02"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/sp_15"
+            android:layout_height="wrap_content"/>
+
+        <!--<TextView-->
+            <!--style="@style/Text_Shade"-->
+            <!--android:id="@+id/item_chatroommessage_context"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_gravity="top"-->
+            <!--android:letterSpacing="0.02"-->
+            <!--android:visibility="gone"-->
+            <!--android:textColor="@color/white_word"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/Text_Shade"
+        android:id="@+id/item_chatroommessage_welcome"
+        android:layout_width="wrap_content"
+        android:letterSpacing="0.02"
+        android:textColor="#e0e0e0"
+        android:text="欢迎"
+        android:visibility="gone"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:textSize="@dimen/sp_15"
+        android:paddingRight="3dp"
+        android:layout_height="20dp"/>
+
+    <ImageView
+        android:id="@+id/item_chatroommessage_super"
+        android:layout_width="15dp"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:layout_height="20dp"/>
+
+    <ImageView
+        android:id="@+id/item_chatroommessage_richscore"
+        android:layout_width="15dp"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:layout_height="20dp"/>
+
+    <ImageView
+        android:id="@+id/item_chatroommessage_guard"
+        android:layout_width="15dp"
+        android:layout_gravity="top"
+        android:visibility="gone"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:layout_height="20dp"/>
+
+    <ImageView
+        android:id="@+id/item_chatroommessage_vip"
+        android:layout_width="15dp"
+        android:visibility="gone"
+        android:layout_gravity="top"
+        android:scaleType="fitCenter"
+        android:gravity="center"
+        android:layout_height="20dp"/>
+
+    <ImageView
+        android:id="@+id/item_chatroommessage_fansclub"
+        android:layout_width="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:layout_height="20dp"/>
+
+    <TextView
+        style="@style/Text_Shade"
+        android:id="@+id/item_chatroommessage_nickname"
+        android:layout_width="wrap_content"
+        android:letterSpacing="0.02"
+        android:textColor="#eee581"
+        android:layout_gravity="top"
+        android:textSize="@dimen/sp_15"
+        android:paddingRight="3dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_height="20dp"/>
+
+    <TextView
+        style="@style/Text_Shade"
+        android:id="@+id/item_chatroommessage_drive"
+        android:layout_width="wrap_content"
+        android:letterSpacing="0.02"
+        android:textColor="#a3a0f8"
+        android:text="驾着"
+        android:layout_gravity="top"
+        android:textSize="@dimen/sp_15"
+        android:gravity="center"
+        android:paddingRight="2dp"
+        android:visibility="gone"
+        android:layout_height="20dp"/>
+
+    <TextView
+        style="@style/Text_Shade"
+        android:id="@+id/item_chatroommessage_mountcount"
+        android:layout_width="wrap_content"
+        android:letterSpacing="0.02"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:textSize="@dimen/sp_15"
+        android:textColor="#fd6b70"
+        android:paddingRight="2dp"
+        android:visibility="gone"
+        android:layout_height="20dp"/>
+
+    <TextView
+        style="@style/Text_Shade"
+        android:id="@+id/item_chatroommessage_mountname"
+        android:layout_width="wrap_content"
+        android:letterSpacing="0.02"
+        android:layout_gravity="top"
+        android:textSize="@dimen/sp_15"
+        android:gravity="center"
+        android:textColor="#e0e0e0"
+        android:visibility="gone"
+        android:paddingRight="3dp"
+        android:layout_height="20dp"/>
+
+    <ImageView
+        android:id="@+id/item_chatroommessage_mountimg"
+        android:layout_width="wrap_content"
+        android:layout_gravity="top"
+        android:scaleType="fitCenter"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_height="15dp"/>
+
+    <TextView
+        android:id="@+id/item_chatroommessage_welcomemsg"
+        style="@style/Text_Shade"
+        android:layout_width="wrap_content"
+        android:letterSpacing="0.02"
+        android:layout_gravity="top"
+        android:textSize="@dimen/sp_15"
+        android:gravity="center"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:textColor="#e0e0e0"
+        android:text="进入直播间"/>
+
+    <TextView
+        style="@style/Text_Shade"
+        android:id="@+id/item_chatroommessage_context"
+        android:layout_width="wrap_content"
+        android:layout_gravity="top"
+        android:letterSpacing="0.02"
+        android:textSize="@dimen/sp_15"
+        android:visibility="gone"
+        android:textColor="@color/white_word"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/item_chatroommessage_share"
+        android:layout_width="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:layout_height="20dp"/>
+
+</com.i5i58.live.common.view.layout.WarpLinearLayout>

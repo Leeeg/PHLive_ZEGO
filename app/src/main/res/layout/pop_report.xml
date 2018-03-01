@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+    <View
+        android:id="@+id/pop_close"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/gray_report"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/txt_camera_pop_menu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white_word"
+            android:layout_marginBottom="0.5dp"
+            android:textColor="@color/gray_report"
+            android:text="请选择举报类型"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/report_tv_1"
+            style="@style/txt_camera_pop_menu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white_word"
+            android:layout_marginBottom="0.5dp"
+            android:text="政治敏感"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/report_tv_2"
+            style="@style/txt_camera_pop_menu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white_word"
+            android:layout_marginBottom="0.5dp"
+            android:text="色情低俗"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/report_tv_3"
+            style="@style/txt_camera_pop_menu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white_word"
+            android:layout_marginBottom="0.5dp"
+            android:text="广告骚扰"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/report_tv_4"
+            style="@style/txt_camera_pop_menu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white_word"
+            android:layout_marginBottom="0.5dp"
+            android:text="人身攻击"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/report_tv_5"
+            style="@style/txt_camera_pop_menu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white_word"
+            android:layout_marginBottom="0.5dp"
+            android:text="声音违规"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/report_tv_6"
+            style="@style/txt_camera_pop_menu"
+            android:background="@color/white_word"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="其他"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/report_tv_cancel"
+            style="@style/txt_camera_pop_menu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/white_word"
+            android:text="取消"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

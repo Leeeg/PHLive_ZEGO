@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\bundles\\default\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "D:\\AsWorkSpace\\PHLive_ZEGO_20170815\\pullToRefresh\\build\\intermediates\\bundles\\default\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    }
+]

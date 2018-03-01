@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/transparent"
+              android:orientation="vertical">
+    <View
+        android:id="@+id/login_close"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:text="余额不足请先充值"
+            android:textColor="@color/black_word"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/recharge_pop_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="余额：0虎币"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/grey_word"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@color/white_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_recharge"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/black_word"
+            android:background="@drawable/shape_round_all_strokeyellow"
+            android:gravity="center"
+            android:text="确认充值"/>
+
+    </LinearLayout>
+
+</LinearLayout>

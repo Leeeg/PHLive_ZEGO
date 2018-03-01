@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/act_audience"
+              android:layout_width="match_parent"
+             android:background="@drawable/bg_audience_player"
+              android:layout_height="match_parent">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/audience_anchor_bg"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/audience_loading_ani"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/audience_player_layout_cid"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/safe_padding"
+        android:layout_marginTop="52.33dp"
+        android:background="@drawable/shape_audience_cid"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="12.36dp"
+            android:layout_height="12.36dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/icon_audience_cid"/>
+
+        <TextView
+            android:id="@+id/audience_player_txt_cid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="9.1dp"
+            android:layout_marginRight="9.45dp"
+            android:gravity="center"
+            android:minWidth="30.1dp"
+            android:textColor="@color/white_word"
+            android:textSize="10.9sp"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/audience_player_viewpager"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/audience_main_player_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/safe_padding"
+        android:src="@drawable/bt_audience_clear"/>
+
+</FrameLayout>

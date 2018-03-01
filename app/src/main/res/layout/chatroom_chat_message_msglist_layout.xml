@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/textroomleMessageLayout"
+                android:layout_width="match_parent"
+    android:visibility="gone"
+                android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_close"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/input"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingLeft="8dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/nim_message_view_bottom"
+        android:paddingRight="8dp"
+        android:layout_height="45dp">
+
+    <ImageView
+        android:id="@+id/emoji_buttonSingle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/nim_message_input_emotion"
+        android:contentDescription="@string/empty"
+        android:scaleType="centerInside"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:id="@+id/power_braager"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:contentDescription="@string/empty"
+        android:gravity="center"
+        android:background="@drawable/barrage_close"/>
+
+    <EditText
+        android:id="@+id/editTextSingleMessage"
+        style="@style/edit_text_style"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="34dp"
+        android:hint="说点什么吧"
+        android:layout_marginLeft="10dp"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:layout_marginRight="10dp"
+        android:textSize="13sp"
+        android:background="@drawable/nim_message_input_edittext_box"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/buttonSendMessage"
+        android:layout_width="46dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/empty"
+        android:gravity="center"
+        android:background="@drawable/sendmagbutton"
+        android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:id="@+id/view_empty"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_height="20dp"/>-->
+
+    <com.i5i58.live.emoji.EmoticonPickerView
+        android:id="@+id/emoticon_picker_view"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+    </com.i5i58.live.emoji.EmoticonPickerView>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/grey_bg"
+              android:gravity="right|center_vertical"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/chat_out_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/chatitem_out_bg"
+        android:layout_marginRight="3dp"
+        android:gravity="center"
+        android:textColor="@color/black_word"
+        android:textSize="13sp"/>
+
+    <com.i5i58.live.common.view.imageVIew.MyCircleAngleImageView
+        xmlns:melove="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chat_out_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:scaleType="centerCrop"
+        melove:radius="5dp"
+        melove:shape_type="rectangle"
+        android:layout_marginRight="10dp"/>
+
+
+</LinearLayout>

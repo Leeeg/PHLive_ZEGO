@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/frg_operate_fl_bottom"
+             android:layout_width="match_parent"
+              android:layout_gravity="bottom"
+                android:visibility="gone"
+              android:gravity="top"
+              android:paddingBottom="4dp"
+             android:layout_height="45dp">
+
+    <ImageView
+        android:id="@+id/liveroom_bottom_iv_keyboard"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/bt_operate_bottom_msg"/>
+
+    <ImageView
+        android:id="@+id/iv_sliveroom_bottom_iv_single"
+        android:layout_toRightOf="@+id/liveroom_bottom_iv_keyboard"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/bt_anchor_bottom_singlechat"/>
+
+    <ImageView
+        android:id="@+id/iv_sliveroom_bottom_iv_menu"
+        android:layout_toLeftOf="@+id/iv_sliveroom_bottom_iv_bgm"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/anchor_operate_menu"/>
+
+    <ImageView
+        android:id="@+id/iv_sliveroom_bottom_iv_bgm"
+        android:layout_alignParentRight="true"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/anchor_operate_bgm"/>
+
+</RelativeLayout>

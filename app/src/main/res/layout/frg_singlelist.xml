@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+    <com.i5i58.live.common.view.imageVIew.MyCircleAngleImageView
+        xmlns:melove="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chat_list_iv_icon"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:scaleType="centerCrop"
+        melove:radius="10dp"
+        android:layout_alignParentLeft="true"
+        melove:shape_type="rectangle"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/chat_list_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="@color/gray_report"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:textSize="13sp"
+        android:text="00000"
+        android:layout_marginRight="10dp"/>
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/chat_list_tv_time"
+        android:visibility="gone"
+        android:layout_marginRight="15dp"
+        layout="@layout/includeview"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="11dp"
+        android:orientation="vertical"
+        android:layout_alignTop="@+id/chat_list_iv_icon"
+        android:layout_toRightOf="@+id/chat_list_iv_icon"
+        android:layout_toEndOf="@+id/chat_list_iv_icon"
+        android:layout_marginStart="11dp">
+
+        <TextView
+            android:id="@+id/chat_list_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textColor="@color/black_word"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/chat_list_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxLength="8"
+            android:textColor="@color/gray_report"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/greyblack"
+        android:layout_alignParentBottom="true"
+        android:layout_height="0.5dp"/>
+
+</RelativeLayout>

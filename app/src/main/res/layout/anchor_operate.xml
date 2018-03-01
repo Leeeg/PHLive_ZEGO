@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+             android:id="@+id/anchor_operate_layout"
+             android:visibility="gone"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/egret"/>
+
+    <!-- box2d -->
+    <FrameLayout
+        android:id="@+id/lyt_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:scaleType="centerCrop"/>
+
+    </FrameLayout>
+
+    <!-- 礼物连刷 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical">
+
+        <org.dync.giftlibrary.widget.GiftFrameLayout
+            android:id="@+id/gift_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <org.dync.giftlibrary.widget.GiftFrameLayout
+            android:id="@+id/gift_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!-- 飘心 -->
+    <RelativeLayout
+        android:layout_gravity="bottom|right"
+        android:layout_width="70dp"
+        android:layout_height="400dp">
+
+        <com.i5i58.live.home.helper.periscope.PeriscopeLayout
+            android:id="@+id/periscope"
+            android:layout_gravity="bottom|right"
+            android:layout_width="70dp"
+            android:layout_height="400dp"/>
+
+    </RelativeLayout>
+
+    <!-- 操作页面 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/anchor_operate_top"/>
+
+        <View
+            android:id="@+id/view_close2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <FrameLayout
+                android:paddingLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/operate_listview_message"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_height="125dp"/>
+
+                <ImageView
+                    android:id="@+id/message_recycle_scrotobottom"
+                    android:layout_gravity="bottom"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:scaleType="center"
+                    android:visibility="gone"
+                    android:src="@drawable/bt_loginbyphone_showhist_up"/>
+
+            </FrameLayout>
+
+            <include layout="@layout/anchor_operate_bottom"/>
+
+            <include layout="@layout/chatroom_chat_message_msglist_layout"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- menu -->
+    <LinearLayout
+        android:id="@+id/anchor_menuLayout"
+        android:layout_width="wrap_content"
+        android:background="@drawable/bg_anchor_menu"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="48dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/anchor_filter"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/filter_menu"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="美颜"
+                android:textColor="@color/black_word"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/anchor_share"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/bg_anchor_share"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="分享"
+                android:textColor="@color/black_word"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/anchor_camera"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/bg_anchor_change_camera"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="翻转"
+                android:textColor="@color/black_word"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/anchor_gift"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/menu_gift"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/bg_anchor_gift_open"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="礼物动效"
+                android:textColor="@color/black_word"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/anchor_mount"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/menu_mount"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/bg_anchor_mount_open"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="坐骑动效"
+                android:textColor="@color/black_word"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- 弹幕 -->
+    <com.i5i58.live.common.view.barrage.BarrageView
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include layout="@layout/filter_layout"/>
+
+</FrameLayout>

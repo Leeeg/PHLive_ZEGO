@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:id="@+id/ll_root"
+    android:background="@color/grey_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/top_bg2" >
+
+        <ImageView
+            android:id="@+id/im_close"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/bt_table_top_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="授权登录"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- 中间 -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_margin="10dp" >
+
+        <com.i5i58.live.common.view.imageVIew.MyCircleAngleImageView
+            xmlns:melove="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cover_image"
+            android:layout_width="fill_parent"
+            android:layout_height="260dp"
+            android:src="@drawable/authorization_blue_bg2x"
+            android:scaleType="centerCrop"
+            melove:radius="10dp"
+            melove:shape_type="rectangle" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="115dp"
+            android:background="@drawable/game_logo" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:background="@drawable/accreditx" >
+            
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text=""
+                android:gravity="center"
+                android:layout_marginLeft="80dp"
+                android:textColor="@color/blue_word"
+                android:textSize="15sp"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="您已对该应用授权"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/grey_word"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <com.i5i58.live.common.view.imageVIew.RoundImageView
+             android:id="@+id/iv_persion_image"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginBottom="35dp"
+             android:layout_gravity="bottom"
+             android:src="@drawable/app_logo" />
+
+    </FrameLayout>
+
+    <!-- 登录 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="4" >
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/accredit"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

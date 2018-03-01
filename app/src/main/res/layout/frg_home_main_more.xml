@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+             android:background="@color/grey_bg"
+              android:layout_height="match_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/type_pull_refresh_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:focusable="true"
+        android:overScrollMode="never"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/morefrg_banner"
+                ptr:indicator_drawable_selected="@drawable/shape_banner_point"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginBottom="7dp"/>
+
+            <com.i5i58.live.common.view.gridView.MyGrivdview
+                android:id="@+id/morefrg_grid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:background="@color/grey_bg"
+                android:numColumns="2"
+                android:layout_marginBottom="40dp"
+                android:horizontalSpacing="1.5dp"
+                android:overScrollMode="never"/>
+
+        </LinearLayout>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</FrameLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_root"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/grey_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_table_top"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="输入手机号，获取免费验证短信"
+        android:textColor="@color/ml_gray"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:cursorVisible="true"
+        style="@style/edit_text_style"
+        android:background="@color/white_bg"
+        android:digits="1234567890"
+        android:hint="输入手机号"
+        android:inputType="phone|number"
+        android:maxLength="11"
+        android:padding="10dp"
+        android:singleLine="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            style="@style/edit_text_style"
+            android:layout_weight="2"
+            android:background="@color/white_bg"
+            android:cursorVisible="true"
+            android:digits="1234567890"
+            android:hint="输入验证码"
+            android:inputType="phone|number"
+            android:maxLength="6"
+            android:padding="10dp"
+            android:singleLine="true">
+
+            <requestFocus/>
+        </EditText>
+
+        <Button
+            android:id="@+id/bt_sendcode"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_round_all_strokeyellow"
+            android:inputType="phone"
+            android:numeric="integer"
+            android:text="获取验证码"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_round_all_strokeyellow"
+        android:text="下一步"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="注册即表示你已经同意使用"
+            android:gravity="center"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_secre"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="条款和隐私政策"
+            android:gravity="center"
+            android:textColor="@color/green_words"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/root_single_info"
+              android:gravity="bottom"
+              android:orientation="vertical">
+
+    <View
+        android:id="@+id/closeSingleChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@color/grey_table">
+
+            <ImageButton
+                android:id="@+id/single_chat_ib_back"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8dp"
+                android:background="@null"
+                android:src="@drawable/dfrg_single_info_back"/>
+
+            <TextView
+                android:id="@+id/single_chat_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black_word"
+                android:textSize="14sp"
+                android:layout_centerInParent="true"/>
+
+            <ImageButton
+                android:id="@+id/single_chat_ib_close"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:background="@null"
+                android:src="@drawable/bt_dfrg_single_close"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#e3e5e7"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/single_chat_info"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:background="@color/grey_bg"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none"/>
+
+        <include layout="@layout/singlechat_chat_message_msglist_layout"/>
+
+    </LinearLayout>
+
+    <com.i5i58.live.emoji.EmoticonPickerView
+        android:id="@+id/emoticon_picker_view"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+    </com.i5i58.live.emoji.EmoticonPickerView>
+
+</LinearLayout>

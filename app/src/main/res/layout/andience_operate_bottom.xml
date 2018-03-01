@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/frg_operate_fl_bottom"
+             android:layout_width="match_parent"
+              android:layout_gravity="bottom"
+              android:gravity="top"
+                android:visibility="gone"
+              android:paddingBottom="4dp"
+             android:layout_height="45dp">
+
+    <ImageView
+        android:id="@+id/liveroom_bottom_iv_keyboard"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/bt_operate_bottom_msg"/>
+
+    <ImageView
+        android:id="@+id/iv_sliveroom_bottom_iv_single"
+        android:layout_toRightOf="@+id/liveroom_bottom_iv_keyboard"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/bt_operate_bottom_singlechat"/>
+
+    <FrameLayout
+        android:id="@+id/operate_bottom_changecameraLayout"
+        android:layout_width="38dp"
+        android:layout_toRightOf="@+id/iv_sliveroom_bottom_iv_single"
+        android:layout_marginLeft="15dp"
+        android:layout_height="38dp">
+
+        <ImageView
+            android:id="@+id/operate_bottom_changecamera"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:visibility="gone"
+            android:background="@drawable/bt_operate_bottom_camera"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/dfrg_gift_gift"
+        android:layout_width="38dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="38dp"
+        android:layout_toRightOf="@+id/operate_bottom_changecameraLayout"
+        android:src="@drawable/bt_operate_bottom_gift"/>
+
+    <ImageView
+        android:id="@+id/iv_sliveroom_bottom_iv_share"
+        android:layout_toLeftOf="@+id/iv_sliveroom_bottom_iv_mic"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/bt_operate_bottom_share"/>
+
+    <ImageView
+        android:id="@+id/iv_sliveroom_bottom_iv_mic"
+        android:layout_alignParentRight="true"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/bt_operate_bottom_mic"/>
+
+</RelativeLayout>
